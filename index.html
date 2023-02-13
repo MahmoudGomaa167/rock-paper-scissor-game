@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <main class="main-page">
+      <div class="container">
+        <div class="game-info">
+          <div class="game-title">
+            <img src="images/logo.svg" alt="game-title" />
+          </div>
+          <div class="game-score">
+            <h6>score</h6>
+            <span class="score">0</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="game-design">
+        <div class="game-board">
+          <button class="paper user-button" type="button" data-choice="paper">
+            <img src="images/icon-paper.svg" />
+          </button>
+          <button class="scissors user-button" type="button" data-choice="scissors">
+            <img src="images/icon-scissors.svg" alt="scissors" />
+          </button>
+          <button class="rock user-button" type="button" data-choice="rock">
+            <img src="images/icon-rock.svg" alt="rock" />
+          </button>
+        </div>
+      </section>
+
+      <section class="game-begin">
+        <div class="game-table">
+          <div class="user-choice">
+            <h3>you picked</h3>
+            <div class="dark-circle">
+              <span class="choice-button">
+                <div class="circle-1"></div>
+                <div class="circle-2"></div>
+                <div class="circle-3"></div>
+              </span>
+            </div>
+          </div>
+
+          <div class="game-result">
+            <h1 class="result"></h1>
+            <button type="button" class="reset-button">play again</button>
+          </div>
+
+          <div class="house-choice">
+            <h3>The house picked</h3>
+            <div class="dark-circle">
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="options">
+        <div class="container">
+          <button class="rules-button" type="button">Rules</button>
+        </div>
+      </section>
+
+      <section class="normal-rules-modal">
+        <div class="modal-container">
+          <div class="modal-title">
+            <h2>Rules</h2>
+            <img class="close" src="images/icon-close.svg" alt="close" />
+          </div>
+          <div class="modal-image">
+            <img src="images/image-rules.svg" alt="normal rules" />
+          </div>
+        </div>
+      </section>
+
+      <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Mahmoud Gomaa</a>.
+      </footer>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
